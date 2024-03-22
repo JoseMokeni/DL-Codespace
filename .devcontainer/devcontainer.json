@@ -26,10 +26,8 @@
 	},
 
 	// "forwardPorts": [],
-
-	"onCreateCommand": "conda init; source ~/.bashrc",
-
-	"postCreateCommand": "conda create -y -n DL numpy pandas matplotlib tensorflow scikit-learn theano keras nlp pytorch seaborn nltk cryptography; conda activate DL",
+	
+	"postCreateCommand": "conda init; source ~/.bashrc; conda create -y -n DL numpy pandas matplotlib tensorflow scikit-learn theano keras nlp pytorch seaborn nltk cryptography; conda activate DL",
 
 
 	// Configure tool-specific properties.
@@ -47,8 +45,8 @@
 
 			]
 		}
-	},
+	}
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	"remoteUser": "root"
+	// "remoteUser": "root"
 }
