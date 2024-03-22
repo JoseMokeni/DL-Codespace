@@ -29,7 +29,8 @@
 
 	"containerUser": "root",
 	
-	"postCreateCommand": "bash .devcontainer/postCreateScript.sh",
+	"postCreateCommand": "conda init",
+	// "postCreateCommand": "bash .devcontainer/postCreateScript.sh",
 
 
 	// Configure tool-specific properties.
